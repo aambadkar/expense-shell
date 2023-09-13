@@ -16,7 +16,7 @@ stat_check
 
 cd /usr/share/nginx/html
 
-download_and_extrac
+download_and_extract
 
 echo starting nginx service
 systemctl enable nginx &>>$log_file
