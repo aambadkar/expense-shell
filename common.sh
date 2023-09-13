@@ -2,11 +2,11 @@ log_file=/tmp/expense.log
 
 download_and_extract() {
  echo download $component code
-  echo $?
+  stat_check
 
  echo extracting $component code
  unzip /tmp/$component.zip >>$log_file
- echo $?
+ stat_check
 }
 
 stat_check(){
