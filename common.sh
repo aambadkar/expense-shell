@@ -3,7 +3,6 @@ log_file=/tmp/expense.log
 download_and_extract() {
  echo download $component code
   stat_check
-
  echo extracting $component code
  unzip /tmp/$component.zip >>$log_file
  stat_check

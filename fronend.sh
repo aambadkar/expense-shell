@@ -5,7 +5,6 @@ echo installing nginx
 dnf install nginx -y &>>$log_file
 stat_check
 
-
 echo placing expense config file in nginx
 cp expense.conf /etc/nginx/default.d/expense.conf &>>$log_file
 stat_check
