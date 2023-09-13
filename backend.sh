@@ -47,5 +47,6 @@ dnf install mysql -y &>>$log_file
 stat_check
 
 echo load the schema
-mysql -h mysql.devopsa17.online -uroot -pExpenseApp@1 < /app/schema/backend.sql &>>$log_file
+mysql_root_password=$1
+mysql -h mysql.devopsa17.online -uroot -p$mysql_root_password < /app/schema/backend.sql &>>$log_file
 stat_check
