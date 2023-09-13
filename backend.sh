@@ -14,7 +14,10 @@ dnf install nodejs -y &>>$log_file
 stat_check
 
 echo add application user
-useradd expense &>>$log_file
+id expense &>>log_file
+if [ $? -ne 0 ]; then
+  useradd expense &>>log_file
+fi
 stat_check
 
 echo clean app contend
