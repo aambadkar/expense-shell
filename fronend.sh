@@ -1,5 +1,5 @@
 source common.sh
-component=frontend
+component=fronend
 
 echo installing nginx
 dnf install nginx -y &>>$log_file
